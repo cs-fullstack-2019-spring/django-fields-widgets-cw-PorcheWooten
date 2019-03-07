@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Application</title>
+    <link rel="stylesheet" href="../../static/heroApp/heroAppStyle.css">
+</head>
+<body>
+<header>Super Hero, Super Hero</header>
+<form action="{% url 'submit' %}" method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button>Submit</button>
+
+</form>
+<footer>Created by Porche Wooten</footer>
+</body>
+</html>

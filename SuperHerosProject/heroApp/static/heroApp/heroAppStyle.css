@@ -1,0 +1,49 @@
+body{
+    background-color: black;
+    color: white;
+}
+
+.container{
+    display: grid;
+    grid-template-areas:
+            "header header"
+            "footer footer";
+    grid-template-columns: 1fr 1fr;
+    border: 1px solid red;
+    color: white;
+    /*margin-left: 20%;*/
+    /*margin-right: 20%;*/
+    /*margin-bottom: 20%;*/
+
+}
+
+header{
+    grid-area: header;
+    border-bottom: 1px solid red;
+    color:white;
+    padding: 5%;
+    text-align: center;
+    font-size: 300%;
+
+}
+/*styles section area*/
+footer{
+    grid-area: footer;
+    /*border: 1px solid red;*/
+    color:white;
+    /*padding: 5%*/
+    text-align: center;
+    margin-top: 60%;
+
+}
+
+form, p{
+    font-size: xx-large;
+    color: white;
+
+}
+
+.p{
+   text-align: center;
+
+}
